@@ -1,0 +1,42 @@
+.feature {
+	$parent: &;
+
+	display: block;
+	text-decoration: none;
+
+	padding: var(--component-padding);
+	text-align: left;
+
+	&__icon {
+		margin-bottom: var(--space-sm);
+		line-height: 1;
+		img {
+			max-width: 80px;
+		}
+	}
+	&__title {
+	}
+	&__content {
+	}
+	&__copy {
+		line-height: 1.4;
+	}
+
+	&--side {
+		&#{$parent}--wide {
+			#{$parent} {
+				&__main {
+					display: flex;
+				}
+				&__icon {
+					margin-bottom: 0;
+					margin-right: var(--space-md);
+				}
+			}
+		}
+	}
+
+	&--center {
+		text-align: center;
+	}
+}

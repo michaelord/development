@@ -1,0 +1,26 @@
+.split-pic {
+	$parent: &;
+
+	&__main {
+		display: flex;
+
+		> * {
+			flex: 0 0 50%;
+		}
+	}
+
+	&__media {
+		position: relative;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__foo {
+		max-width: calc(1160px / 2);
+		padding: var(--grid-gap);
+	}
+}

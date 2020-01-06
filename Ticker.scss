@@ -1,0 +1,36 @@
+.ticker {
+	$parent: &;
+
+	// outline:1px solid red;
+	// display: inline-block;
+	position: relative;
+	overflow: hidden;
+	padding: 20px 0;
+	margin: 10px 0;
+
+	&:not(.reset) {
+		#{$parent} {
+			&__main {
+				transition: all 0.2s;
+			}
+
+			&__item {
+				transition: all 0.4s;
+			}
+		}
+	}
+
+	&__main {
+		position: relative;
+	}
+
+	&__item {
+		height: 100%;
+
+		opacity: 0;
+
+		&.active {
+			opacity: 1;
+		}
+	}
+}

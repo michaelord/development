@@ -1,0 +1,54 @@
+.logos {
+	$parent: &;
+
+	position: relative;
+
+	&--carousel {
+		height: 0;
+		// margin-top:-50px;
+		top: -50px;
+		z-index: 10;
+
+		+ * {
+			--vertical-offset: 50px;
+		}
+
+		#{$parent} {
+			&__body {
+				padding: var(--space-lg) 0;
+				box-shadow: var(--shadow-lg);
+				border-radius: var(--radius-lg);
+			}
+		}
+	}
+
+	&__main {
+		/*display: flex;
+		align-items: center;
+		justify-content: space-between;*/
+	}
+
+	.carousel__cell {
+		width: 25%;
+	}
+
+	&__item {
+		padding: 0 var(--space-md);
+		transition: all 0.3;
+		svg {
+			display: block;
+			width: 100%;
+			height: auto;
+			max-width: 130px;
+			margin: 0 auto;
+		}
+
+		&:not(:hover) {
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			-ms-filter: grayscale(100%);
+			-o-filter: grayscale(100%);
+			filter: gray;
+		}
+	}
+}

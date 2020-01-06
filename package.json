@@ -1,0 +1,26 @@
+{
+	"name": "development",
+	"private": true,
+	"description": "...",
+	"version": "0.1.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/michaelord/development.git"
+	},
+	"devDependencies": {},
+	"author": "michaelord",
+	"keywords": [],
+	"dependencies": {
+		"components/article": "http://github.com/michaelord/article.git",
+		"components/content": "http://github.com/michaelord/content.git",
+		"components/editable": "http://github.com/michaelord/editable.git",
+		"components/form": "http://github.com/michaelord/form.git",
+		"components/icon": "http://github.com/michaelord/icon.git",
+		"components/layout": "http://github.com/michaelord/layout.git",
+		"components/libs": "http://github.com/michaelord/libs.git",
+		"components/navigation": "http://github.com/michaelord/navigation.git",
+		"components/provider": "http://github.com/michaelord/provider.git",
+		"components/types": "http://github.com/michaelord/types.git"
+	}
+}

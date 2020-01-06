@@ -1,0 +1,32 @@
+.inset-block {
+	$parent: &;
+
+	&__header {
+		padding: var(--space-lg) 0 var(--space-2xl) 0;
+		position: relative;
+	}
+
+	&__main {
+		padding: 0 0 var(--space-lg) 0;
+	}
+
+	&__inner {
+		> *:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__body {
+		position: relative;
+		z-index: 2;
+
+		padding: var(--space-lg);
+
+		margin-top: calc(var(--space-xl) * -1);
+		min-height: calc(var(--space-xl) * 2);
+
+		> *:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

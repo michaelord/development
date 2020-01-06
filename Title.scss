@@ -1,0 +1,13 @@
+.title {
+	$parent: &;
+
+	.heading {
+		&:after {
+			content: '';
+			display: block;
+			width: 50px;
+			border-top: 3px solid var(--color-primary);
+			margin: var(--space-sm) 0 var(--space-lg) 0;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.biglink {
+	$parent: &;
+
+	background: #eee;
+
+	display: block;
+	text-decoration: none;
+
+	margin: var(--space-md) 0;
+	position: relative;
+
+	&__body {
+		padding: var(--component-padding);
+	}
+
+	&__title {
+	}
+}
